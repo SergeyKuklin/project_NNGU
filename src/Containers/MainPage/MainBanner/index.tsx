@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './styles.module.scss';
-import { Nav } from '../../../Components/Nav';
+import { NavMain } from '../../../Components/Nav/Nav_main';
 
 export const MainBanner = () => {
   return (
         <div className={styles.page}>
           <div className={styles.block}>
             <div className={styles.block_1}>
-              <Nav />
+              <NavMain />
               <h2>Главная</h2>
             </div>
             <div className={styles.block_2}></div>
