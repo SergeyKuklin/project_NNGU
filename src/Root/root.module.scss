@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Atyp_Regular_Variable";
+    src: local("Atyp_Regular_Variable"),
+      local("Atyp_Regular_Variable"),
+      url("./Fonts/Atyp_Regular_Variable/Atyp_Regular_Variable.ttf") format("ttf");
+    font-weight: normal;
+  }
+
+  $color_1: #F9ED69;
+  $color_2: #F08A5D;
+  $color_3: #B83B5E;
+  $color_4: #6A2C70;
+
+  .page_width {
+    width: 1400px;
+  }
+
+  .flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  //====== ШРИФТЫ=======
+
+  .font_Roboto_slab_24 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+  }
+
+  .font_Alegreya_Sans_Bold_48 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .font_Oswald {
+    font-family: 'Oswald', sans-serif;
+  }
+
+// =====НАВИГАЦИЯ=====
+
+  .navClass {
+    font-family: Atyp_Regular_Variable;
+    font-size: 24px;
+    font-weight: 75;
+    text-transform: uppercase;
+  }
+
+// =====КАРТИНКИ ЗАДНИЙ ФОН=====
+
+.bg_img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+ 

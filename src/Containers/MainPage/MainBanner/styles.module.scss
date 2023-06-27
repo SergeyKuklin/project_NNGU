@@ -1,0 +1,45 @@
+@import '../../../Root/root.module.scss';
+
+.page {
+    @extend .page_width;
+    background-color: $color_1;
+    margin: auto;
+    .block{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        .block_1 {
+            border: 1px solid black;
+            padding-left: 40px;
+            padding-top: 40px;
+        }
+        .block_2 {
+            border: 1px solid black;
+            background-image: url(./IMG/welcome_NN.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        .block_3 {
+            border: 1px solid black;
+            p {
+                @extend .font_Roboto_slab_24;
+                text-align: center;
+                padding: 112px 70px;
+            }
+        }
+        .block_4 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            div {
+                border: 1px solid black;
+            }
+            :nth-child(1) {
+                background-image: url(./IMG/block_4_1.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,76 @@
+@import '../../Root/root.module.scss';
+
+.block {
+    display: flex;
+    flex-direction: column;
+    width: 207px;
+}
+
+a {
+    @extend .navClass;
+    text-decoration: none;
+    margin-bottom: 25px;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+    color: transparent;
+    transition: -webkit-text-stroke 1s;
+    position: relative;
+}
+a:nth-child(1) {
+    &::before {
+        content: attr(data-text);
+        position: absolute;
+        color: #6A2C70;
+        -webkit-text-stroke: 0px;
+        width: 0;
+        overflow: hidden;
+        border-right: 2px solid #6A2C70;
+        transition: all 1s;
+}
+}
+a:nth-child(2) {
+    &::before {
+        content: attr(data-text);
+        position: absolute;
+        color: #F08A5D;
+        -webkit-text-stroke: 0px;
+        width: 0;
+        overflow: hidden;
+        border-right: 2px solid #F08A5D;
+        transition: all 1s;
+}
+}
+
+a:nth-child(3) {
+    &::before {
+        content: attr(data-text);
+        position: absolute;
+        color: #6A2C70;
+        -webkit-text-stroke: 0px;
+        width: 0;
+        overflow: hidden;
+        border-right: 2px solid #6A2C70;
+        transition: all 1s;
+}
+}
+
+a:nth-child(4) {
+    &::before {
+        content: attr(data-text);
+        position: absolute;
+        color: #F08A5D;
+        -webkit-text-stroke: 0px;
+        width: 0;
+        overflow: hidden;
+        border-right: 2px solid #F08A5D;
+        transition: all 1s;
+}
+}
+
+a:hover {
+    width: 100%;
+    -webkit-text-stroke: 0.5px #6A2C70;
+    transition: all 1s;
+    &::before {
+        width: 100%;
+    }
+}
