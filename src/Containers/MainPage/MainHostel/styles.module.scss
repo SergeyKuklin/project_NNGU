@@ -1,0 +1,26 @@
+@import '../../../Root/root.module.scss';
+
+.container {
+    @extend .page_width;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $color_1;
+    .block_1 {
+        border: 1px solid black;
+
+        
+
+    }
+    .block_2 {
+        border: 1px solid black;
+    }
+    .block_3 {
+        border: 1px solid black;
+    }
+    .block_4 {
+        border: 1px solid black;
+    }
+}

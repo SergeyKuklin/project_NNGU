@@ -1,5 +1,7 @@
 @import '../../../Root/root.module.scss';
 
+// =====Блок картинок анимационных======
+
 .block_img_animated {
     &::after {
         content: '';
@@ -19,6 +21,8 @@
         }
     }
 }
+
+// =====Код страницы=====
 
 .page {
     @extend .page_width;
