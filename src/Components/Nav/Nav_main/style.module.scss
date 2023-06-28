@@ -6,7 +6,7 @@
     width: 207px;
 }
 
-a {
+.nav {
     @extend .navClass;
     @extend .font_Atyp_Regular;
     text-decoration: none;
@@ -17,7 +17,7 @@ a {
     position: relative;
     // overflow: hidden;
 }
-a:nth-child(1) {
+.nav:nth-child(1) {
     &::before {
         content: attr(data-text);
         position: absolute;
@@ -56,7 +56,7 @@ a:nth-child(1) {
 }
 
 }
-a:nth-child(2) {
+.nav:nth-child(2) {
     &::before {
         content: attr(data-text);
         position: absolute;
@@ -98,7 +98,7 @@ a:nth-child(2) {
 }
 }
 
-a:nth-child(3) {
+.nav:nth-child(3) {
     &::before {
         content: attr(data-text);
         position: absolute;
@@ -140,7 +140,7 @@ a:nth-child(3) {
 }
 }
 
-a:nth-child(4) {
+.nav:nth-child(4) {
     &::before {
         content: attr(data-text);
         position: absolute;
@@ -182,7 +182,7 @@ a:nth-child(4) {
 }
 }
 
-a:hover {
+.nav:hover {
     width: 100%;
     -webkit-text-stroke: 0.5px #6A2C70;
     transition: all 1s;

@@ -1,0 +1,138 @@
+@import '../../../Root/root.module.scss';
+@import '../../../Components/MainButton/styles.module.scss';
+
+.container {
+    @extend   .page_width;
+}
+
+.main_button {
+    min-width: 360px;
+}
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 480px);
+    background: $color_1;
+    .block_1 {
+        border: 1px solid black;
+        padding-top: 60px;
+        padding-left: 40px;
+        p {
+        @extend .font_Roboto_slab_24;
+        padding-right: 140px;
+        margin-top: 60px;
+        }
+    }
+    .block_2 {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        transition: all 1s;
+        &:hover {
+            background-size: 110% 110%;
+            transition: all 1s;
+            &::after {
+                transform: translateX(100%);
+                content: 'Предложения, включают большое разнообразие кухонь и видов обслуживания.';
+            }
+        }
+        &::after {
+            content: 'Множество заведений, которые сильно различаются по внешнему виду.';
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            background: $color_2;
+            @extend .font_Roboto_slab_24;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            transform: translateX(0);
+            transition: all 1s;
+        }
+        :nth-child(1) {
+            background: url(./IMG/block_2_1.png) center no-repeat;
+            background-size: 100% 100%;
+            transition: background-size 1s;
+        }
+        :nth-child(2) {
+            background: url(./IMG/block_2_2.png) center no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .block_3 {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        transition: all 1s;
+        &:hover {
+            background-size: 110% 110%;
+            transition: all 1s;
+            &::after {
+                transform: translateX(0);
+                content: 'Старомодная подача и простота не мешает возвращаться к самому главному - это вкусу.';
+            }
+        }
+        &::after {
+            content: 'Нижний Новгород стал одним из самых интересных городов России, в смысле еды.';
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            background: $color_2;
+            @extend .font_Roboto_slab_24;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            transform: translateX(100%);
+            transition: all 1s;
+        }
+        :nth-child(1) {
+            background: url(./IMG/block_3_1.png) center no-repeat;
+            background-size: 100% 100%;
+            transition: background-size 1s;
+        }
+        :nth-child(2) {
+            background: url(./IMG/block_3_2.png) center no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .block_4 {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        transition: all 1s;
+        &:hover {
+            background-size: 110% 110%;
+            transition: all 1s;
+            &::after {
+                transform: translateX(0);
+                content: 'Приглядеться к Нижнему Новгороду с гастрономической стороны - стоит того!';
+            }
+        }
+        &::after {
+            content: 'Рестораны и кафе - это часть культуры и экскурсий в любом городе и Нижний Новгород не исключение.';
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            background: $color_2;
+            @extend .font_Roboto_slab_24;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            transform: translateX(100%);
+            transition: all 1s;
+        }
+        :nth-child(1) {
+            background: url(./IMG/block_4_1.png) center no-repeat;
+            background-size: 100% 100%;
+            transition: background-size 1s;
+        }
+        :nth-child(2) {
+            background: url(./IMG/block_4_2.png) center no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}

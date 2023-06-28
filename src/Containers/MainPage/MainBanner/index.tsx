@@ -4,6 +4,7 @@ import { NavMain } from '../../../Components/Nav/Nav_main';
 
 export const MainBanner = () => {
   return (
+    <>
         <div className={styles.page}>
           <div className={styles.block}>
             <div className={styles.block_1}>
@@ -22,5 +23,6 @@ export const MainBanner = () => {
             </div>
           </div>
         </div>
+    </>
   );
 };
