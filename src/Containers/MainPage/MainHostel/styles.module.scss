@@ -53,6 +53,7 @@
         grid-template-rows: repeat(2, 1fr);
         border: 1px solid black;
         @extend .font_Roboto_slab_24;
+        min-height: 480px;
         div:nth-child(1) {
             display: flex;
             align-items: center;

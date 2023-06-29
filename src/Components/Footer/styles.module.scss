@@ -1,0 +1,63 @@
+@import '../../Root/root.module.scss';
+
+.container {
+    @extend .page_width;
+    text-transform: uppercase;
+    @extend .font_Atyp_Regular;
+}
+
+.block_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    min-height: 120px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        height: 100%;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 1px;
+        height: 100%;
+        background-color: black;
+    }
+}
+
+.block_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+    padding-left: 80px;
+    padding-right: 80px;
+    position: relative;
+    border-bottom: 1px solid black;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        height: 100%;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 25%;
+        width: 50%;
+        height: 100%;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+}

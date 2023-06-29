@@ -6,9 +6,9 @@ export const NavMain = () => {
         <>
             <div className={styles.block}>
                 <a href="" data-text="ГЛАВНАЯ" className={styles.nav}>ГЛАВНАЯ</a>
-                <a href="" data-text="ПИТАНИЕ" className={styles.nav}>ПИТАНИЕ</a>
-                <a href="" data-text="НОЧЛЕГ" className={styles.nav}>НОЧЛЕГ</a>
-                <a href="" data-text="РАЗВЛЕЧЕНИЕ" className={styles.nav}>РАЗВЛЕЧЕНИЕ</a>
+                <a href="" data-text="Перекусить" className={styles.nav}>Перекусить</a>
+                <a href="" data-text="поспать" className={styles.nav}>поспать</a>
+                <a href="" data-text="Прогуляться" className={styles.nav}>прогуляться</a>
             </div>
         </>
   );

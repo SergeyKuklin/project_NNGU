@@ -3,6 +3,7 @@ import { MainBanner } from './MainBanner';
 import { MainNN } from './MainNN';
 import { MainHostel } from './MainHostel';
 import { MainCafe } from './MainCafe';
+import { Footer } from '../../Components/Footer';
 
 export const MainPage = () => {
   return (
@@ -11,6 +12,7 @@ export const MainPage = () => {
         <MainNN />
         <MainHostel />
         <MainCafe />
+        <Footer />
     </>
   )
 }
