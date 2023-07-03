@@ -2,5 +2,81 @@
 
 .container {
     @extend .page_width;
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+    z-index: -1;
 }
 
+.menu {
+    margin-top: 70px;
+}
+
+.container_2 {
+    margin-top: 70px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    .text {
+        font-weight: 75;
+        text-transform: uppercase;
+        font-size: 36px;
+    }
+}
+
+.block_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;    
+    :nth-child(1) {
+        background-image: url(./IMG/Polygon_4.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        width: 280px;
+        height: 280px;
+    }
+    :nth-child(2) {
+        background-image: url(./IMG/Polygon_7.png);
+        width: 120px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-left: 60px;
+    }
+}
+
+.block_2 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: end;
+    width: 280px;
+    height: auto;
+    position: absolute;
+    top: -50%;
+    left: 32%;
+    position: relative;
+    :nth-child(1) {
+        background-image: url(./IMG/Polygon_6.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        background-position: center;
+        display: flex;
+        justify-self: center;
+        width: 200px;
+        height: 200px;
+    }
+    :nth-child(2) {
+        background-image: url(./IMG/Polygon_5.png);
+        width: 280px;
+        height: 280px;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+    }
+}
+
+.flip_block {
+    transform: rotateY(180deg);
+}

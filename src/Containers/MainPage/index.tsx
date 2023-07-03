@@ -4,6 +4,7 @@ import { MainNN } from './MainNN';
 import { MainHostel } from './MainHostel';
 import { MainCafe } from './MainCafe';
 import { Footer } from '../../Components/Footer';
+import { MainBar } from './MainBar';
 
 export const MainPage = () => {
   return (
@@ -12,6 +13,7 @@ export const MainPage = () => {
         <MainNN />
         <MainHostel />
         <MainCafe />
+        <MainBar />
         <Footer />
     </>
   )

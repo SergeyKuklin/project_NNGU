@@ -6,7 +6,34 @@ export const CafeBanner = () => {
   return (
         <>
             <div className={styles.container}>
-                <Nav />
+                <div className={styles.menu}>
+                    <Nav />
+                </div>
+                <div className={styles.content}>
+                    <div className={styles.container_2}>
+                        <div>
+                            <div className={styles.block_1}>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div className={styles.block_2}>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div className={styles.text}>перекусить</div>
+                        <div className={styles.flip_block}>
+                            <div className={styles.block_1}>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div className={styles.block_2}>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
   )

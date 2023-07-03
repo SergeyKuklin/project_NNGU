@@ -4,6 +4,7 @@
     @extend .page_width;
     text-transform: uppercase;
     @extend .font_Atyp_Regular;
+    
 }
 
 .block_1 {
@@ -14,6 +15,10 @@
     padding-right: 80px;
     min-height: 120px;
     position: relative;
+    a {
+        text-decoration: none;
+        color: black;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -42,6 +47,10 @@
     padding-right: 80px;
     position: relative;
     border-bottom: 1px solid black;
+    a {
+        text-decoration: none;
+        color: black;
+    }
     &::before {
         content: '';
         position: absolute;

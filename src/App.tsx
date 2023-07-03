@@ -5,8 +5,8 @@ import { CafePage } from './Containers/CafePage';
 function App() {
   return (
     <div>
-      {/* <MainPage /> */}
-      <CafePage />
+      <MainPage />
+      {/* <CafePage /> */}
     </div>
   );
 }

@@ -1,0 +1,123 @@
+@import '../../../Root/root.module.scss';
+@import '../../../Components/MainButton/styles.module.scss';
+
+.container {
+    @extend .page_width;
+    
+}
+
+.block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $color_1;
+    min-height: 500px;
+    
+}
+
+.block_1 {
+    border: 1px solid black;
+    @extend .font_Roboto_slab_24;
+    min-height: 460px;
+    p {
+        padding-left: 40px;
+        padding-top: 150px;
+    }
+    .main_button {
+        margin-top: 40px;
+    }
+}
+
+.block_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 250px;
+    :nth-child(1) {
+        background: url(./IMG/block_2_2.png) center no-repeat;
+        transition: all 1s;
+        &:hover {
+            box-shadow: 0px 0px 10px 5px $color_4;
+            transition: all 1s;
+            &::after {
+                transform: translateY(103%);
+                opacity: 1;
+                transition: all 1s;
+            }
+        }
+        &::after {
+            content: 'Для тех, кто любит вина и почувствует всю прелесть этих напитков';
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @extend .font_Roboto_slab_24;
+            transform: translateY(0);
+            text-align: center;
+            width: 25%;
+            height: 50%;
+            border: 1px solid black;
+            opacity: 0;
+            transition: all 1s;
+        }
+    }
+    :nth-child(2) {
+        background: url(./IMG/block_2_1.png) center no-repeat;
+        transition: all 1s;
+        &:hover {
+            box-shadow: 0px 0px 10px 5px $color_4;
+            transition: all 1s;
+            &::after {
+                transform: translateY(103%);
+                opacity: 1;
+                transition: all 1s;
+            }
+        }
+        &::after {
+            content: 'Стороной не обошли и тех, кто ценит домашние натуральные крепкие напитки';
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @extend .font_Roboto_slab_24;
+            transform: translateY(0);
+            text-align: center;
+            width: 25%;
+            height: 50%;
+            border: 1px solid black;
+            opacity: 0;
+            transition: all 1s;
+        }
+    }
+}
+
+.block_3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 450px;
+    :nth-child(1) {
+        background: url(./IMG/block_3_1.png) center no-repeat;
+        transition: all 1s;
+        position: relative;
+        &::after {
+            content: 'Ощути на себе прелесть закрытых баров';
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @extend .font_Roboto_slab_24;
+            transform: translateX(0);
+            text-align: center;
+            height: 100%;
+            border: 1px solid black;
+            opacity: 0;
+        }
+        &:hover {
+            box-shadow: 0px 0px 10px 5px $color_4;
+            transition: all 1s;
+            &::after {
+                transform: translateX(100%);
+                opacity: 1;
+                transition: all 1s;
+            }
+        }
+    }
+}
